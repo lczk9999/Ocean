@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Importance of Ocean Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="inicio">
+
+        <!-- Título principal do site -->
+        <h1>The Importance of Ocean Life</h1>
+
+        <!-- Frase de apresentação do site -->
+        <p>Protecting our oceans means protecting our planet.</p>
+
+        <button onclick="mostrar('menu')">ENTER</button>
+    </section>
+
+    <section id="menu" class="pagina" style="display:none">
+
+        <!-- Título do menu principal -->
+        <h1>Ocean Life</h1>
+
+        <div class="menu">
+            <div class="texto">
+
+                <!-- Título sobre a importância dos oceanos -->
+                <h2>Why are oceans important?</h2>
+
+                <!-- Explicação sobre a importância da vida marinha -->
+                <p>
+                    Oceans are very important for our planet.
+                    They are home to millions of animals and plants.
+                    They also help control the Earth's temperature
+                    and produce a large part of the oxygen we breathe.
+                    We need to protect the oceans from pollution.
+                </p>
+            </div>
+
+            <div class="botoes">
+                <button onclick="mostrar('animais')">Marine Animals</button>
+                <button onclick="mostrar('limpeza')">Beach Cleanup Tracker</button>
+                <button onclick="mostrar('ajudar')">How Can You Help?</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="animais" class="pagina" style="display:none">
+
+        <!-- Título da seção de animais marinhos -->
+        <h1>Marine Animals</h1>
+
+        <div class="caixa">
+
+            <!-- Nome e descrição da tartaruga marinha -->
+            <h2>Sea Turtle</h2>
+            <p>Sea turtles live in oceans and can travel long distances.</p>
+
+            <!-- Nome e descrição do golfinho -->
+            <h2>Dolphin</h2>
+            <p>Dolphins are intelligent marine mammals.</p>
+
+            <!-- Nome e descrição do tubarão -->
+            <h2>Shark</h2>
+            <p>Sharks are important for keeping ocean ecosystems balanced.</p>
+
+            <!-- Nome e descrição do polvo -->
+            <h2>Octopus</h2>
+            <p>Octopuses are very intelligent animals with eight arms.</p>
+
+            <!-- Nome e descrição da baleia -->
+            <h2>Whale</h2>
+            <p>Whales are some of the largest animals on Earth.</p>
+
+        </div>
+
+        <button onclick="mostrar('menu')">Back to menu</button>
+    </section>
+
+    <section id="limpeza" class="pagina" style="display:none">
+
+        <!-- Título da seção de coleta de lixo -->
+        <h1>Beach Cleanup Tracker</h1>
+
+        <!-- Explicação de como registrar o lixo coletado -->
+        <p>Record the trash you collect from the beach.</p>
+
+        <!-- Contador da quantidade total de lixo coletado -->
+        <h2 id="total">Total collected: 0</h2>
+
+        <div class="lixeiras">
+
+            <!-- Categoria de plástico: cor vermelha -->
+            <div class="lixeira">
+                <div class="cor vermelho">Plastic</div>
+                <input id="plastic" type="number" min="0" value="0">
+                <button onclick="adicionar('plastic')">Add</button>
+            </div>
+
+            <!-- Categoria de papel: cor azul -->
+            <div class="lixeira">
+                <div class="cor azul">Paper</div>
+                <input id="paper" type="number" min="0" value="0">
+                <button onclick="adicionar('paper')">Add</button>
+            </div>
+
+            <!-- Categoria de vidro: cor verde -->
+            <div class="lixeira">
+                <div class="cor verde">Glass</div>
+                <input id="glass" type="number" min="0" value="0">
+                <button onclick="adicionar('glass')">Add</button>
+            </div>
+
+            <!-- Categoria de metal: cor amarela -->
+            <div class="lixeira">
+                <div class="cor amarelo">Metal</div>
+                <input id="metal" type="number" min="0" value="0">
+                <button onclick="adicionar('metal')">Add</button>
+            </div>
+
+            <!-- Categoria de lixo orgânico: cor marrom -->
+            <div class="lixeira">
+                <div class="cor marrom">Organic</div>
+                <input id="organic" type="number" min="0" value="0">
+                <button onclick="adicionar('organic')">Add</button>
+            </div>
+
+            <!-- Categoria de outros materiais: cor cinza -->
+            <div class="lixeira">
+                <div class="cor cinza">Other</div>
+                <input id="other" type="number" min="0" value="0">
+                <button onclick="adicionar('other')">Add</button>
+            </div>
+
+        </div>
+
+        <button onclick="mostrar('menu')">Back to menu</button>
+    </section>
+
+    <section id="ajudar" class="pagina" style="display:none">
+
+        <!-- Título da seção sobre como ajudar -->
+        <h1>How Can You Help?</h1>
+
+        <div class="caixa">
+
+            <!-- Subtítulo sobre a proteção dos oceanos -->
+            <h2>Protect the ocean</h2>
+
+            <!-- Introdução às maneiras de ajudar -->
+            <p>There are many ways to help marine life:</p>
+
+            <!-- Primeira maneira de ajudar -->
+            <p>1. Collect trash from beaches.</p>
+
+            <!-- Segunda maneira de ajudar -->
+            <p>2. Avoid throwing plastic into the ocean.</p>
+
+            <!-- Terceira maneira de ajudar -->
+            <p>3. Recycle materials whenever possible.</p>
+
+            <!-- Quarta maneira de ajudar -->
+            <p>4. Use less plastic in your daily life.</p>
+
+            <!-- Quinta maneira de ajudar -->
+            <p>5. Respect marine animals and their habitats.</p>
+
+            <!-- Frase final da seção -->
+            <h2>Small actions can make a difference!</h2>
+
+        </div>
+
+        <button onclick="mostrar('menu')">Back to menu</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: #d7f4df;
+    color: #234b43;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #247e69;
+    color: white;
+    margin: 5px;
+}
+
+button:hover {
+    background: #165c4c;
+}
+
+#inicio {
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+    background: linear-gradient(#dff7ff, #b8e8ed, #267caa);
+}
+
+#inicio h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    margin-bottom: 20px;
+}
+
+#inicio button {
+    background: #267caa;
+    padding: 15px 30px;
+}
+
+.pagina {
+    padding: 30px;
+    text-align: center;
+}
+
+.pagina h1 {
+    margin-bottom: 20px;
+    color: #247e69;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.texto {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.caixa {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.caixa h2 {
+    margin-top: 10px;
+    color: #247e69;
+}
+
+.lixeiras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.lixeira {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 180px;
+}
+
+.cor {
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.vermelho { background: red; }
+.azul { background: blue; }
+.verde { background: green; }
+.amarelo { background: yellow; color: black; }
+.marrom { background: brown; }
+.cinza { background: gray; }
+
+input {
+    width: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#total {
+    margin: 20px;
+    color: #247e69;
+}
